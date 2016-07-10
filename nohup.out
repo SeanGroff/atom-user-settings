@@ -1,3 +1,4 @@
 Gtk-Message: Failed to load module "pantheon-filechooser-module"
 Gtk-Message: Failed to load module "canberra-gtk-module"
-App load time: 382ms
+App load time: 379ms
+(electron) app.getDataPath is deprecated. Use app.getPath instead.

@@ -23,54 +23,61 @@
   // deprecated!
 }
 
-// styles the header above the list tree
-.list-tree li.list-nested-item.status-modified > .list-item {
-  color: #2AFFDF;
-}
-
-// style the tree view
-.tree-view {
-  font-size:90%;
-
+.theme-one-dark-ui {
+  // styles the header above the list tree
   .list-tree li.list-nested-item.status-modified > .list-item {
     color: #2AFFDF;
   }
+  .tab-bar { font-size: 12px; }
+  .tree-view {
+    font-size: 12px;
 
-  .entries.list-tree {
-    .directory {
+    .list-tree li.list-nested-item.status-modified > .list-item {
+      color: #2AFFDF;
+    }
+
+    .entries.list-tree {
+      .directory {
+        .header {
+          font-weight: bold;
+          font-size: 14px;
+        }
+      }
+      .directory.entry.list-nested-item.status-modified {
+        color: #2AFFDF;
+      }
       .header {
         font-weight: bold;
         font-size: 14px;
       }
-    }
-    .directory.entry.list-nested-item.status-modified {
-      color: #2AFFDF;
-    }
-    .header {
-      font-weight: bold;
-      font-size: 14px;
-    }
-    .status-modified {
-      color: #2AFFDF;
+      .status-modified {
+        color: #2AFFDF;
+      }
     }
   }
+
+  // adjust size of icons
+  .list-group .icon::before, .list-tree .icon::before{
+    font-size: 12px;
+  }
+
+  .list-group li:not(.list-nested-item), .list-tree li:not(.list-nested-item), .list-group li.list-nested-item > .list-item, .list-tree li.list-nested-item > .list-item {
+    line-height:28px;
+  }
+
+  .list-group .selected:before, .list-tree .selected:before {
+    height:28px;
+  }
+
+  .list-tree.has-collapsable-children .list-nested-item > .list-tree > li, .list-tree.has-collapsable-children .list-nested-item > .list-group > li {
+    padding-left:8px;
+  }
+  .status-bar { font-size: 10px; }
 }
 
-// adjust size of icons
-.list-group .icon::before, .list-tree .icon::before{
-  font-size: 10px;
-}
-
-.list-group li:not(.list-nested-item), .list-tree li:not(.list-nested-item), .list-group li.list-nested-item > .list-item, .list-tree li.list-nested-item > .list-item {
-  line-height:28px;
-}
-
-.list-group .selected:before, .list-tree .selected:before {
-  height:28px;
-}
-
-.list-tree.has-collapsable-children .list-nested-item > .list-tree > li, .list-tree.has-collapsable-children .list-nested-item > .list-group > li {
-  padding-left:8px;
+// style the tree view
+.tree-view {
+  // font-size:90%;
 }
 
 // style the background and foreground colors on the atom-text-editor-element itself

@@ -24,6 +24,7 @@
       "highlight-selected": true
   "one-dark-ui":
     layoutMode: "Compact"
+    tabSizing: "Minimum"
   react: {}
   "tool-bar":
     position: "Left"
