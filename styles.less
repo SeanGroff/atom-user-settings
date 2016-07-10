@@ -1,0 +1,137 @@
+/*
+ * Your Stylesheet
+ *
+ * This stylesheet is loaded when Atom starts up and is reloaded automatically
+ * when it is changed and saved.
+ *
+ * Add your own CSS or Less to fully customize Atom.
+ * If you are unfamiliar with Less, you can read more about it here:
+ * http://lesscss.org
+ */
+
+
+/*
+ * Examples
+ * (To see them, uncomment and save)
+ */
+
+ html, body {
+    font-size: 14px;
+}
+
+.editor {
+
+}
+
+// style the background color of the tree view
+.tree-view {
+  font-size:90%;
+}
+
+// adjust size of icons
+.list-group .icon::before, .list-tree .icon::before{
+  font-size: 10px;
+}
+
+.list-group li:not(.list-nested-item), .list-tree li:not(.list-nested-item), .list-group li.list-nested-item > .list-item, .list-tree li.list-nested-item > .list-item {
+  line-height:28px;
+}
+
+.list-group .selected:before, .list-tree .selected:before {
+  height:28px;
+}
+
+.list-tree.has-collapsable-children .list-nested-item > .list-tree > li, .list-tree.has-collapsable-children .list-nested-item > .list-group > li {
+  padding-left:8px;
+}
+
+// style the background and foreground colors on the atom-text-editor-element itself
+atom-text-editor {
+  font-size: 14px;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+// To style other content in the text editor's shadow DOM, use the ::shadow expression
+atom-text-editor::shadow {
+  // this styling is for the Cobalt2 theme
+  .source.js.jsx {
+    .JSXNested {
+      color: #FFFFFF;
+    }
+    .storage.type.function.js {
+      color: #FFC600;
+    }
+    .entity.other.attribute-name.jsx {
+      color: #ffC600;
+    }
+    .punctuation.definition.tag.jsx {
+      color: #CCCCCC;
+    }
+    .punctuation.section.embedded.begin.jsx {
+      color: #CCCCCC;
+    }
+    .punctuation.section.embedded.end.jsx {
+      color: #CCCCCC;
+    }
+    .meta.brace.round.js {
+      color: #CCCCCC;
+    }
+    .meta.brace.curly.js {
+      color: #CCCCCC;
+    }
+    .string.quasi.js {
+      .string.quoted.template.js {
+        .entity.quasi.element.js {
+          .punctuation.quasi.element.begin.js {
+             color: #FF9D00;
+          }
+          .variable.other.readwrite.js {
+            color: #CCCCCC;
+          }
+          .punctuation.quasi.element.end.js {
+             color: #FF9D00;
+          }
+        }
+      }
+    }
+    .meta.function-call.static.with-arguments.js {
+      .entity.name.function.js {
+        color: #CCCCCC;
+      }
+    }
+    .entity.name.class.js {
+      color: #FB94FF;
+    }
+    .meta.class.body.js {
+      .meta.tag.jsx {
+        .punctuation.definition.tag.jsx {
+          color: #CCCCCC;
+        }
+        .JSXAttrs {
+          .JSXNested {
+            .meta.tag.jsx {
+              .entity.name.tag.open.jsx {
+                .support.class.component.open {
+                  color: #9EFFFF;
+                }
+              }
+            }
+          }
+        }
+      }
+      .constant.other.object.key.js {
+        .string.unquoted.js {
+          color: #2AFFDF;
+        }
+      }
+      .meta.function-call.with-arguments.js {
+        .entity.name.function {
+          color: #FB94FF;
+        }
+        .entity.name.function.js {
+          color: #CCCCCC;
+        }
+      }
+    }
+  }
+}

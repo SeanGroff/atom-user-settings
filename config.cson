@@ -1,0 +1,34 @@
+"*":
+  "atom-beautify":
+    _analyticsUserId: "dd49c194-9fe0-4ffb-9d54-cc65334d3207"
+  core:
+    autoHideMenuBar: true
+    themes: [
+      "one-dark-ui"
+      "cobalt2-syntax"
+    ]
+  editor:
+    fontFamily: "Ubuntu Mono"
+    invisibles: {}
+    showIndentGuide: true
+    showInvisibles: true
+    softWrap: true
+    tabType: "soft"
+  emmet: {}
+  "exception-reporting":
+    userId: "498c252f-e86e-fd7e-a015-ccc379d4896d"
+  "isotope-ui":
+    minimalMode: true
+  minimap:
+    plugins:
+      "highlight-selected": true
+  "one-dark-ui":
+    layoutMode: "Compact"
+  react: {}
+  "tool-bar":
+    position: "Left"
+  welcome:
+    showOnStartup: false
+".coffee.jsx.source":
+  editor:
+    tabLength: 2
